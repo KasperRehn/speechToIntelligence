@@ -1,0 +1,44 @@
+@import "../styles/GlobalAnimations.css";
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;/*var(--sb_bg)*/;
+  width: 75px; /* Default collapsed width */
+  position: fixed;
+  top: 0;
+  color:rgba(98, 45, 185, 0.8);
+  
+  height: 100vh; /* Makes the sidebar the full height of the viewport */
+  transition: all var(--fade-speed); /* Smoothly transitions the width */
+  z-index: 1000; /* Ensures the sidebar is above most other content */
+}
+
+.sidebar.expanded {
+  width: 250px; /* Expanded width */
+  background-image: linear-gradient(
+    rgba(48, 102, 190, 0.4), 
+    rgba(14, 5, 27, 1)
+  ); /* Sets a gradient background */
+  
+}
+
+.Expandbutton {
+  padding: 8px 0;
+  margin-left: auto;
+  cursor: pointer; /* Added for better UX */
+}
+.imgcontainer{
+  padding-bottom: 60px;
+}
+
+.photo {
+  display: flex;
+  margin: auto;
+  padding: 15px;
+  height: 155px;
+  width: 155px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid white;
+}

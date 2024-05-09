@@ -1,0 +1,58 @@
+
+.menu{
+    display: block;
+}
+
+.menu__button{
+    padding: 10px 0;
+    color: var(--sb_mb_opacity);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: all 0.4s; 
+    animation: fade-in-from-left 0.5s;
+}
+
+.menu__button:hover {
+    background-color: var(--sb_mb_hover_bg);
+    color: var(--sb_mb_hover_color);
+    cursor: pointer;
+}
+
+.menu__button:focus {
+    border-left: 4px solid var(--header-right);
+    background-color: var(--panel_bg);
+    color: var(--sb_mb_hover_color);
+    cursor: pointer;
+    border-bottom:  4px solid var(--header-left);
+}
+
+.menu__button--active{ 
+    border-left: 4px solid var(--header-left);
+    background-color: var(--panel_bg);
+    color: var(--sb_mb_hover_color);
+    position: relative;
+}
+.menu__button--active::before{
+    content: ''; 
+    width: 3px;
+    height: 100%;
+    background-color: var(--sb_mb_opacity);
+    position: absolute;
+    left: 0; /* we mean 0 px from menu__button--active, therefore we have position relative in menu__button--active*/
+    top: 0;
+
+}
+
+.menu__icon{
+    font-size: 40px;
+    margin-bottom: 0px;
+ 
+
+}
+.menu__text{
+    font-weight: 500;
+    font-size: 14px;
+
+}

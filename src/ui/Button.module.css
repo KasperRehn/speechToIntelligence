@@ -1,0 +1,100 @@
+/* Button.module.css */
+
+
+.buttonBase {
+  display: inline-block; /* Or 'block', depending on your design */
+  cursor: pointer;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease; /* Smooth transition for specified properties */
+  padding: 5px;
+}
+
+/* Size Variations */
+
+
+.buttonXsmall {
+  font-size: 1.0rem;
+  padding: 0.4rem 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid var(--color-grey-600);
+  composes: buttonBase; 
+}
+
+.buttonSmall {
+  font-size: 1.2rem;
+  padding: 0.4rem 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  composes: buttonBase; 
+}
+
+.buttonMedium {
+  font-size: 1.4rem;
+  padding: 1.2rem 1.6rem;
+  font-weight: 500;
+  composes: buttonBase; 
+}
+
+.buttonLarge {
+  font-size: 1.6rem;
+  padding: 1.2rem 2.4rem;
+  font-weight: 500;
+  composes: buttonBase; 
+}
+
+/* Color Variations */
+.buttonExit {
+  color: var(--color-brand-50);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.buttonExit:hover {
+  color: var(--color-red-700);
+}
+
+.buttonPrimary {
+  color: var(--color-grey-200);
+  background-color: var(--header-left);
+  transition: color, opacity, outline-color 0.4s;
+}
+
+.buttonPrimary:hover,
+.buttonPrimary:focus {
+  color: var(--color-grey-100);
+  opacity: 0.975;
+  outline-color: var(--header-right);
+}
+
+.buttonSecondary {
+  color: var(--color-grey-600);
+  background: var(--color-grey-7);
+  border: 1px solid var(--color-grey-200);
+}
+
+.buttonSecondary:hover {
+  background-color: var(--color-grey-50);
+}
+
+.buttonDanger {
+  color: var(--color-red-100);
+  background-color: var(--color-red-700);
+}
+
+.buttonDanger:hover {
+  background-color: var(--color-red-800);
+}
+
+.buttonSuccess {
+  color: white;
+  background-color: var(--color-green-600);
+  border: 1px solid var(--color-grey-200);
+}
+
+.buttonSuccess:hover {
+  background-color: var(--color-green-700);
+  color: white;
+}

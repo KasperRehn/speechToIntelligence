@@ -1,0 +1,35 @@
+
+@import "../styles/GlobalAnimations.css";
+
+.header{
+    position: fixed;
+    background-image: linear-gradient(to right, var(--header-left), var(--header-right));
+    height: var(--header-height); 
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    animation: fade-in-from-top var(--fade-speed);
+    z-index: 1000;
+}
+
+.header__text{
+    font-family: Poppins;
+    font-size: 35px;
+    align-self: center;
+    padding: 0 25px;
+    animation: fade-in-from-top var(--fade-speed);
+}
+
+
+  .i18nCard {
+    height: 75px;
+    position: relative;
+    color: rgba(255,255,255, 0.70);
+    padding: 0 13px;
+    cursor: pointer;
+    transition: all 0.8s;
+    display: flex;
+    align-items: center;
+  }
+  

@@ -1,0 +1,5 @@
+numpy==1.23.5
+pandas==2.0.3
+SQLAlchemy==1.4.46  # major and minor version uprades require coordination from the Data Lake team
+Flask==2.2.5
+

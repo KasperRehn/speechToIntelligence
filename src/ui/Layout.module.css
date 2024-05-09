@@ -1,0 +1,12 @@
+.mainContainer{
+  transition: all var(--fade-speed);
+}
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Adjust 'auto' to sidebar width if known/fixed */
+}
+
+.pageRender {
+  justify-content: center;
+  flex-grow: 1;
+}
